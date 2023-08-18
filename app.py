@@ -29,8 +29,10 @@ def prediction(age,cpd,tc,sbp,dbp,bmi,hr,glucose):
     s=clf.predict([[age,cpd,tc,sbp,dbp,bmi,hr,glucose]])
     if s==1:
         p='HIGH'
+        print('Be Carefull')
     else:
         p='LOW'
+        print('Your are safe from DEATH')
     return p
 
 if __name__=='__main__':
